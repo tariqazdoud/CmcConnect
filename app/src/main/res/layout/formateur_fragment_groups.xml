@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formateur.formateurGroups.GroupsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <EditText
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginHorizontal="23dp"
+            android:background="@drawable/shape_edit_text_search_bar"
+            android:hint="Rechercher un groupe.."
+            android:padding="6dp"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/icon_search"
+            android:drawablePadding="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Groups_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="18dp"
+            android:layout_marginHorizontal="26dp"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="343dp"
+    android:layout_height="422dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@drawable/shape_request_popup_background"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/exit_button"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:src="@drawable/exit"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/request_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type de demande"
+        android:textSize="26sp"
+        style="@style/TextSemiBold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom d'étudiant"
+        android:textSize="24sp"
+        style="@style/TextMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/request_type"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groupe d'étudiant"
+        android:textSize="19sp"
+        style="@style/TextRegular"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/student_name"
+        android:layout_alignStart="@id/student_name" />
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motif: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat molestie ipsum.placerat molestie ipsum.placerat molestie ipsum."
+        android:textSize="19sp"
+        style="@style/TextRegular"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/group_name"
+        android:layout_alignStart="@id/group_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/select_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sélectionner une date"
+        android:textSize="15sp"
+        style="@style/TextMedium"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/reason"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/select_date_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_date_picker"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/calendar_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_calendar_date"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/date_input"
+            style="@style/TextRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:background="@null"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <ImageView
+            android:id="@+id/cancel_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/icon_clear"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/post_reply"
+        style="@style/TextSemiBold"
+        android:layout_width="222dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_button_reply"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/reply"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="@color/main_green_color"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</RelativeLayout>
+
+

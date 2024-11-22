@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shared.chatHome.ChatHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <EditText
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginHorizontal="23dp"
+            android:background="@drawable/shape_edit_text_search_bar"
+            android:hint="Rechercher un message.."
+            android:padding="6dp"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/icon_search"
+            android:drawablePadding="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conversations"
+            style="@style/TextSemiBold"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="26dp"
+            android:layout_marginTop="18dp"
+            android:textSize="27sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="26dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

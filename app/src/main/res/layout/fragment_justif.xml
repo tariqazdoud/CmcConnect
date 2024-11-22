@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.studentJustif.JustifFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/justif_motif_et"
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/shape_edit_text"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:hint="Envoyer un message avec votre justification"
+            android:padding="6dp"
+            android:textColor="@color/grey"
+            android:textSize="18sp" />
+
+
+        <ImageButton
+            android:id="@+id/select_file"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/filepickericon"/>
+        <TextView
+            android:id="@+id/selected_justif_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sélectionner un fichier"
+            android:layout_marginTop="4dp"
+
+            android:textSize="20sp"
+            style="@style/TextRegular"
+            />
+        <Button
+            android:id="@+id/send_justif_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_long_btn"
+            app:backgroundTint="@color/main_green_color"
+            android:text="Envoyer"
+            android:textSize="20sp"
+            style="@style/TextSemiBold"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+
+
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

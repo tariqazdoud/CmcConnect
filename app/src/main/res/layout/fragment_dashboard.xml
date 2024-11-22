@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shared.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/tv_ressources_recentes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recent_resources"
+                android:textSize="22sp"
+                style="@style/TextSemiBold"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_voir_tout_ressources"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_ressources_recentes"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:text="@string/see_more"
+                style="@style/TextMedium"
+                android:textColor="@color/grey"
+                android:textSize="16.4sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_ressources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ressources_recentes"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:clipToPadding="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_upcoming_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upcoming_events"
+                android:textSize="22sp"
+                style="@style/TextSemiBold"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_voir_tout_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_upcoming_events"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:text="@string/see_more"
+                style="@style/TextMedium"
+                android:textColor="@color/grey"
+                android:textSize="16.4sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_upcoming_events"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:clipToPadding="false"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

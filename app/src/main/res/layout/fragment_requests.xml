@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".student.studentRequest.RequestsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="302dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="7dp"
+            android:background="@drawable/shape_spinner_resources"
+            android:layout_gravity="center_horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_requests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="302dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="40dp"
+            android:elevation="7dp"
+            android:background="@drawable/shape_spinner_resources"
+            android:layout_gravity="center_horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_teachers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+        
+        <EditText
+            android:id="@+id/request_motif_edit_text"
+            android:layout_width="340dp"
+            android:layout_height="292dp"
+            android:background="@drawable/shape_request_edit_text"
+            android:elevation="15dp"
+            android:hint="@string/request_motif"
+            style="@style/TextMedium"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/grey"/>
+
+        <Button
+            android:id="@+id/request_button"
+            android:layout_width="310dp"
+            android:layout_height="51dp"
+            app:backgroundTint="@color/main_green_color"
+            android:background="@drawable/shape_button_login"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            style="@style/TextSemiBold"
+            android:textSize="21sp"
+            android:layout_marginTop="100dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

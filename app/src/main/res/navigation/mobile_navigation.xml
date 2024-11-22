@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/id_dashboardFragment">
+
+    <fragment
+        android:id="@+id/id_chatHomeFragment"
+        android:name="com.example.cmcconnect.shared.chatHome.ChatHomeFragment"
+        android:label="fragment_chat_home"
+        tools:layout="@layout/fragment_chat_home" />
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.example.cmcconnect.shared.chatRoom.ChatRoomFragment"
+        android:label="fragment_chat_room"
+        tools:layout="@layout/fragment_chat_room" />
+    <fragment
+        android:id="@+id/id_dashboardFragment"
+        android:name="com.example.cmcconnect.shared.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_id_dashboardFragment_to_id_eventsFragment"
+            app:destination="@id/id_eventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_eventsFragment"
+        android:name="com.example.cmcconnect.shared.events.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/eventsDetailsFragment"
+        android:name="com.example.cmcconnect.shared.eventsDetails.EventsDetailsFragment"
+        android:label="fragment_events_details"
+        tools:layout="@layout/fragment_events_details" />
+    <fragment
+        android:id="@+id/id_justifFragment"
+        android:name="com.example.cmcconnect.student.studentJustif.JustifFragment"
+        android:label="fragment_justif"
+        tools:layout="@layout/fragment_justif" />
+    <fragment
+        android:id="@+id/id_profileFragment"
+        android:name="com.example.cmcconnect.shared.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/id_requestsFragment"
+        android:name="com.example.cmcconnect.student.studentRequest.RequestsFragment"
+        android:label="fragment_requests"
+        tools:layout="@layout/fragment_requests" />
+    <fragment
+        android:id="@+id/id_resourcesFragment"
+        android:name="com.example.cmcconnect.student.studentResource.ResourcesFragment"
+        android:label="fragment_resources"
+        tools:layout="@layout/fragment_resources" />
+    <fragment
+        android:id="@+id/id_groupeStudentsFragment"
+        android:name="com.example.cmcconnect.formateur.formateurGroupStudents.GroupeStudentsFragment"
+        android:label="formateur_fragment_grope_students"
+        tools:layout="@layout/formateur_fragment_grope_students" >
+        <argument
+            android:name="clickedGroup"
+            app:argType="com.example.cmcconnect.model.GroupeDto" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_groupsFragment"
+        android:name="com.example.cmcconnect.formateur.formateurGroups.GroupsFragment"
+        android:label="formateur_fragment_groups"
+        tools:layout="@layout/formateur_fragment_groups" >
+        <action
+            android:id="@+id/action_id_groupsFragment_to_id_groupeStudentsFragment"
+            app:destination="@id/id_groupeStudentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_postResourcesFragment"
+        android:name="com.example.cmcconnect.formateur.formateurPostResources.PostResourcesFragment"
+        android:label="formateur_fragment_post_resources"
+        tools:layout="@layout/formateur_fragment_post_resources" />
+    <fragment
+        android:id="@+id/id_seeRequestsFragment"
+        android:name="com.example.cmcconnect.formateur.formateurSeeRequests.SeeRequestsFragment"
+        android:label="formateur_fragment_see_requests"
+        tools:layout="@layout/formateur_fragment_see_requests" />
+    <fragment
+        android:id="@+id/id_seeResourcesFragment"
+        android:name="com.example.cmcconnect.formateur.formateurSeeResources.SeeResourcesFragment"
+        android:label="formateur_fragment_see_resources"
+        tools:layout="@layout/formateur_fragment_see_resources" />
+    <fragment
+        android:id="@+id/id_adminFormateursFragment"
+        android:name="com.example.cmcconnect.admin.adminFormateurs.AdminFormateursFragment"
+        android:label="admin_fragment_admin_formaturs"
+        tools:layout="@layout/admin_fragment_admin_formaturs" />
+    <fragment
+        android:id="@+id/id_answeredRequestsFragment"
+        android:name="com.example.cmcconnect.admin.adminAnsweredRequests.AnsweredRequestsFragment"
+        android:label="admin_fragment_answered_requests"
+        tools:layout="@layout/admin_fragment_answered_requests" />
+    <fragment
+        android:id="@+id/id_adminDashboardFragment"
+        android:name="com.example.cmcconnect.admin.adminDashboard.AdminDashboardFragment"
+        android:label="admin_fragment_dashboard"
+        tools:layout="@layout/admin_fragment_dashboard" />
+    <fragment
+        android:id="@+id/id_filiereFragment"
+        android:name="com.example.cmcconnect.admin.adminFiliere.FiliereFragment"
+        android:label="admin_fragment_filiere"
+        tools:layout="@layout/admin_fragment_filiere" />
+    <fragment
+        android:id="@+id/formateursAssignedGroupsPopupFragment"
+        android:name="com.example.cmcconnect.admin.adminFormateursAssignedGroups.FormateursAssignedGroupsPopupFragment"
+        android:label="admin_fragment_formateurs_assigned_groups_popup"
+        tools:layout="@layout/admin_fragment_formateurs_assigned_groups_popup" />
+    <fragment
+        android:id="@+id/id_adminJustifsFragment"
+        android:name="com.example.cmcconnect.admin.adminJustifs.AdminJustifsFragment"
+        android:label="admin_fragment_justifs"
+        tools:layout="@layout/admin_fragment_justifs" />
+    <fragment
+        android:id="@+id/id_adminSeeRequestsFragment"
+        android:name="com.example.cmcconnect.admin.adminSeeRequests.AdminSeeRequestsFragment"
+        android:label="admin_fragment_see_requests"
+        tools:layout="@layout/admin_fragment_see_requests" />
+</navigation>

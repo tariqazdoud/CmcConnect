@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CmcConnect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_logo_text">CMC\nCONNECT</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="address_email">Addresse e-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="forgot_password">Mot de pass oubliée?</string>
+    <string name="recent_resources">Ressources récentes</string>
+    <string name="see_more"><![CDATA[voir tout >]]></string>
+    <string name="ressource_title">Titre de ressource</string>
+    <string name="upcoming_events">Événements prochaines</string>
+    <string name="event_title">Titre d\'événement</string>
+    <string name="events_avenir">Evénements à venir</string>
+    <string name="details">Détails</string>
+    <string name="description">Description</string>
+    <string name="request_motif">Entrez un motif pour votre demande...</string>
+    <string name="send">Envoyer</string>
+    <string name="post">Soumettre</string>
+    <string name="all_demands">Toutes les demandes</string>
+    <string name="reply">Répondre</string>
+    <string name="answered_reqs">Demandes répondues</string>
+    <string name="pending">Demandes en attente</string>
+    <string name="toutes_les_filieres">Toutes les filieres</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/id_adminDashboardFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_dashboard"
+        android:title="Accueil" />
+    <item
+        android:id="@+id/id_filiereFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_resources"
+        android:title="Filieres" />
+    <item
+        android:id="@+id/id_adminSeeRequestsFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_request"
+        android:title="Demandes" />
+    <item
+        android:id="@+id/id_answeredRequestsFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_request"
+        android:title="Demandes Repondus" />
+    <item
+        android:id="@+id/id_adminJustifsFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_justifications"
+        android:title="Justifications" />
+    <item
+        android:id="@+id/id_adminFormateursFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_group"
+        android:title="Formateurs" />
+    <item
+        android:id="@+id/id_eventsFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_event"
+        android:title="Evénements" />
+    <item
+        android:id="@+id/id_profileFragment"
+        android:checkable="true"
+        android:icon="@drawable/menu_profile"
+        android:title="Profile" />
+</menu>

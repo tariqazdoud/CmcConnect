@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formateur.formateurGroupStudents.GroupeStudentsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/chat_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingVertical="13dp"
+            android:background="@drawable/shape_chat_room_header"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_arrow"
+                android:clickable="true"
+                android:backgroundTint="@color/transparent"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:src="@drawable/icon_group"
+                />
+            <TextView
+                android:id="@+id/group_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group 1"
+                android:textSize="24sp"
+                style="@style/TextBold"
+                android:textAlignment="center"
+
+                android:layout_marginHorizontal="16dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/search_bar_tv"
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="23dp"
+            android:background="@drawable/shape_edit_text_search_bar"
+            android:hint="Rechercher un message.."
+            android:padding="6dp"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/icon_search"
+            android:layout_below="@+id/chat_header"
+            android:drawablePadding="16dp"/>
+        <TextView
+            android:id="@+id/filiere_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filière 1"
+            android:textSize="29sp"
+            style="@style/TextSemiBold"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/search_bar_tv"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/students_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/filiere_tv"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="28dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_edit_text_search_bar">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

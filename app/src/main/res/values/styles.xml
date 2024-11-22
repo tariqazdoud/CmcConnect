@@ -1,0 +1,76 @@
+<resources>
+
+    <style name="TextRegular">
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:fontFamily">@font/baloo2regular</item>
+
+    </style>
+
+    <style name="TextMedium">
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:fontFamily">@font/baloo2medium</item>
+
+    </style>
+
+    <style name="TextSemiBold">
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:fontFamily">@font/baloo2semibold</item>
+
+    </style>
+
+    <style name="TextBold">
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:fontFamily">@font/baloo2bold</item>
+
+    </style>
+
+    <style name="TextExtraBold">
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:fontFamily">@font/baloo2extrabold</item>
+
+    </style>
+
+    <style name="TextRegular2">
+        <item name="android:textSize">19sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:fontFamily">@font/baloo2regular</item>
+
+    </style>
+    <style name="TextRegularSwitch">
+        <item name="android:textSize">8sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">@color/color_selector_switch_toggle</item>
+        <item name="android:fontFamily">@font/baloo2regular</item>
+
+    </style>
+
+
+
+    <style name="CustomSwitchCompat" parent="Widget.AppCompat.CompoundButton.Switch">
+            <item name="trackTint">@null</item>
+            <item name="thumbTint">@null</item>
+        </style>
+
+    <style name="TextRegularMessage">
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:fontFamily">@font/baloo2regular</item>
+
+    </style>
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
+    <style name="roundedImageCorners">
+        <item name="android:background">@drawable/shape_event_details_holder</item>
+    </style>
+
+
+
+</resources>

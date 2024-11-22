@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin.adminAddGroup.AdminAddGroupFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cree un groupe"
+        style="@style/TextBold"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/group_name_tv"
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edit_text_search_bar"
+            android:drawablePadding="16dp"
+            android:hint="Entrez le nom du groupe"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/group_year_tv"
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edit_text_search_bar"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/group_filiere_tv"
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edit_text_search_bar"
+            android:drawablePadding="16dp"
+
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/post_ressource_button"
+            android:layout_width="310dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/main_green_color"
+            android:background="@drawable/shape_button_login"
+            android:text="Ajouter"
+            android:textColor="@color/white"
+            style="@style/TextSemiBold"
+            android:textSize="21sp"
+            android:layout_marginTop="120dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

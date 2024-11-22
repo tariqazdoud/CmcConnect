@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/shape_formateur_resource_rv_item">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_pdf" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="3dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre de ressource"
+            android:textSize="18sp"
+            style="@style/TextMedium"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/01/2024"
+            android:textSize="14sp"
+            style="@style/TextRegular"
+            android:textColor="@color/grey"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/downloadIcon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:src="@drawable/icon_download"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</LinearLayout>

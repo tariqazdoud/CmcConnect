@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_mobile_navigation"
+    app:startDestination="@id/id_adminDashboardFragment">
+
+    <fragment
+        android:id="@+id/id_adminFormateursFragment"
+        android:name="com.example.cmcconnect.admin.adminFormateurs.AdminFormateursFragment"
+        android:label="admin_fragment_admin_formaturs"
+        tools:layout="@layout/admin_fragment_admin_formaturs" />
+    <fragment
+        android:id="@+id/id_answeredRequestsFragment"
+        android:name="com.example.cmcconnect.admin.adminAnsweredRequests.AnsweredRequestsFragment"
+        android:label="admin_fragment_answered_requests"
+        tools:layout="@layout/admin_fragment_answered_requests" />
+    <fragment
+        android:id="@+id/id_adminDashboardFragment"
+        android:name="com.example.cmcconnect.admin.adminDashboard.AdminDashboardFragment"
+        android:label="admin_fragment_dashboard"
+        tools:layout="@layout/admin_fragment_dashboard" />
+    <fragment
+        android:id="@+id/id_filiereFragment"
+        android:name="com.example.cmcconnect.admin.adminFiliere.FiliereFragment"
+        android:label="admin_fragment_filiere"
+        tools:layout="@layout/admin_fragment_filiere" >
+        <action
+            android:id="@+id/action_id_filiereFragment_to_studentsByGroupeFragment"
+            app:destination="@id/studentsByGroupeFragment" />
+        <action
+            android:id="@+id/action_id_filiereFragment_to_adminAddGroupFragment"
+            app:destination="@id/adminAddGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formateursAssignedGroupsPopupFragment"
+        android:name="com.example.cmcconnect.admin.adminFormateursAssignedGroups.FormateursAssignedGroupsPopupFragment"
+        android:label="admin_fragment_formateurs_assigned_groups_popup"
+        tools:layout="@layout/admin_fragment_formateurs_assigned_groups_popup" />
+    <fragment
+        android:id="@+id/id_adminJustifsFragment"
+        android:name="com.example.cmcconnect.admin.adminJustifs.AdminJustifsFragment"
+        android:label="admin_fragment_justifs"
+        tools:layout="@layout/admin_fragment_justifs" />
+    <fragment
+        android:id="@+id/id_adminSeeRequestsFragment"
+        android:name="com.example.cmcconnect.admin.adminSeeRequests.AdminSeeRequestsFragment"
+        android:label="admin_fragment_see_requests"
+        tools:layout="@layout/admin_fragment_see_requests" />
+    <fragment
+        android:id="@+id/id_profileFragment"
+        android:name="com.example.cmcconnect.shared.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/id_eventsFragment"
+        android:name="com.example.cmcconnect.shared.events.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/eventsDetailsFragment"
+        android:name="com.example.cmcconnect.shared.eventsDetails.EventsDetailsFragment"
+        android:label="fragment_events_details"
+        tools:layout="@layout/fragment_events_details" />
+    <fragment
+        android:id="@+id/studentsByGroupeFragment"
+        android:name="com.example.cmcconnect.admin.adminStudentsByGroup.StudentsByGroupeFragment"
+        android:label="admin_fragment_students_by_groupe"
+        tools:layout="@layout/admin_fragment_students_by_groupe" >
+        <argument
+            android:name="group"
+            app:argType="com.example.cmcconnect.model.GroupeDto" />
+        <action
+            android:id="@+id/action_studentsByGroupeFragment_to_adminAddStudent"
+            app:destination="@id/adminAddStudent" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAddGroupFragment"
+        android:name="com.example.cmcconnect.admin.adminAddGroup.AdminAddGroupFragment"
+        android:label="admin_fragment_admin_add_group"
+        tools:layout="@layout/admin_fragment_admin_add_group" >
+        <argument
+            android:name="selectedFiliere"
+            app:argType="com.example.cmcconnect.model.FiliereDto" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAddStudent"
+        android:name="com.example.cmcconnect.admin.adminAddGroup.AdminAddStudent"
+        android:label="admin_fragment_admin_add_student"
+        tools:layout="@layout/admin_fragment_admin_add_student" >
+        <argument
+            android:name="clickedGroup"
+            app:argType="com.example.cmcconnect.model.GroupeDto" />
+    </fragment>
+
+</navigation>

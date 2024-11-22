@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="348dp"
+    android:layout_height="210dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/shape_event_item">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/event_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:src="@drawable/img_event_poster_three" />
+
+    <TextView
+        android:id="@+id/event_date"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_event_date"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:text="01 \n Mar"
+        android:textSize="11sp"
+        style="@style/TextBold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_event_details_holder">
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/event_title"
+            android:textSize="25sp"
+            style="@style/TextBold"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/event_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_title"
+            android:layout_marginStart="8dp"
+            android:drawablePadding="10dp"
+            android:text="Amphitheatre"
+            android:textSize="17sp"
+            style="@style/TextMedium"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/icon_localisation"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/button_details"
+            style="@style/TextSemiBold"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_button_event_details"
+            android:text="@string/details"
+            android:textSize="15sp"
+            app:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

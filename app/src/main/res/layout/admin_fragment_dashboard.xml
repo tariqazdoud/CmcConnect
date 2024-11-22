@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.adminDashboard.AdminDashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/tv_answered_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answered_reqs"
+                android:textSize="22sp"
+                style="@style/TextSemiBold"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_voir_tout_deamandes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_answered_req"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:text="@string/see_more"
+                style="@style/TextMedium"
+                android:textColor="@color/grey"
+                android:textSize="16.4sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_answered_demandes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_answered_req"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:clipToPadding="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/tv_pending_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pending"
+                android:textSize="22sp"
+                style="@style/TextSemiBold"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_voir_tout_ressources"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_pending_req"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:text="@string/see_more"
+                style="@style/TextMedium"
+                android:textColor="@color/grey"
+                android:textSize="16.4sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_pending_demandes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pending_req"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:clipToPadding="false"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
